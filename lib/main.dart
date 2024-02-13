@@ -16,8 +16,15 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.purple[600],
       ),
       body: Center(
-        child: Image.asset('assets/image3.jpg'),
-        ),
+        child: IconButton(
+          onPressed: () {
+          print('Oooops you pressed me!');
+          },
+          icon: Icon(
+          Icons.mail
+          ),
+          ),
+          ),
       floatingActionButton: FloatingActionButton(
         onPressed: () { },
         backgroundColor: Colors.purple[600],
@@ -26,3 +33,19 @@ class Home extends StatelessWidget {
     );
   }
 }
+
+
+// child: ElevatedButton.icon(
+// style: ElevatedButton.styleFrom(
+// backgroundColor: Colors.lime, // Set background color here
+// foregroundColor: Colors.white, // Set text color
+// ),
+// onPressed: () {
+// print('Oooops you pressed me!');
+// },
+// icon: Icon(
+// Icons.mail
+// ),
+// label: Text ('click me'),
+// ),
+// ),

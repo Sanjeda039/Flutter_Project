@@ -15,24 +15,31 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.purple[600],
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Text('Hello World'),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.teal, // Set background color
-              foregroundColor: Colors.white, // Set text color
-            ),
-            onPressed: () { },
-            child: Text('Click me'),
+          Row(
+
+            children: [
+              Text('Hello,  '),
+              Text('World'),
+            ],
           ),
           Container(
-            color: Colors.blueGrey,
+            padding: EdgeInsets.all(20.0),
+            color: Colors.lime,
+            child: Text('One'),
+          ),
+          Container(
             padding: EdgeInsets.all(30.0),
-            child: Text ('inside container'),
-          )
+            color: Colors.amber,
+            child: Text('Two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.amberAccent,
+            child: Text('Three'),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
